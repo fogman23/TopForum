@@ -1,0 +1,1170 @@
+@import config
+*
+    font-family: Roboto, sans-serif
+.container
+    padding: 0
+.btn
+    &-register
+        background-color: #c99c47
+        border: none
+        width: 153px
+        height: 42px
+        line-height: 42px
+        text-align: center
+        font-size: 13px
+        font-weight: 400
+        a
+            text-transform: uppercase
+            text-decoration: none
+            color: #fff
+    &-nav
+        background-color: #e8d8b6
+        border: none
+        padding: 14px 27px
+        font-size: 12px
+        line-height: 10px
+        a
+            text-transform: uppercase
+            color: #323232
+            text-decoration: none
+    &-subscribe
+        padding: 17px 41px
+        font-size: 13px
+        line-height: 10px
+        font-weight: 400
+        margin-left: 15px
+        border: none
+        background-color: #323232
+        color: #fff
+        text-transform: uppercase
+header
+    background-color: #323232
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        height: 56px
+        .menu > li:hover .sub-menu
+            opacity: 1
+            z-index: 5
+            margin-top: 10px
+        .menu
+            list-style-type: none
+            display: flex
+            position: relative
+            justify-content: start
+            align-items: center
+            margin: 0
+            padding: 0
+            .sub-menu
+                z-index: -1
+                opacity: 0
+                list-style-type: none
+                position: absolute
+                width: 295px
+                border: 1px solid #d6d6d6
+                top: 56px
+                margin-left: -20px
+                padding: 0
+                background-color: #fff
+                &__item
+                    padding-left: 10px!important
+                    display: block
+                    font-size: 15px
+                    font-weight: 300
+                    height: 48px
+                    margin: 0 10px
+                    line-height: 48px
+                    border-bottom: 1px solid #d6d6d6
+                    a
+                        text-decoration: none
+                        color: #323232
+                    &:hover
+                        padding-left: 20px!important
+                        margin: 0
+                        background-color: #d6d6d6
+            &__item
+                display: block
+                font-size: 15px
+                line-height: 16px
+                font-weight: 300
+                margin: 10px 0
+                padding: 10px 20px
+                border-right: 1px solid #474747
+                &:hover
+                    background-color: #212121
+                    padding: 20px
+            &__link
+                text-decoration: none
+                color: #fff
+                &-active
+                    color: $accent
+                    font-weight: 500
+            li:last-child
+                border: none
+
+
+.register
+    padding: 15px 0
+    height: 93px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .logo
+            padding: 0 30px 0 15px
+    &__items
+        display: flex
+        min-width: 780px
+        height: 63px
+    &__item
+        padding: 0 15px
+        display: flex
+        align-items: center
+        &-icon
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 37px
+            height: 37px
+            border: 1px solid #000
+            border-radius: 2px
+        &-link
+            margin-left: 15px
+            font-size: 15px
+            text-transform: uppercase
+            font-weight: 300
+            color: #323232
+            &:hover
+                color: #323232
+
+/* Слайдер */
+.slick-slider
+/* Слайдер запущен */
+.slick-slider.slick-initialized
+/* Слайдер с точками */
+.slick-slider.slick-dotted
+/* Ограничивающая оболочка */
+.slick-list
+    overflow: hidden
+/* Лента слайдов */
+.slick-track
+    display: flex
+/* Слайд */
+.slick-slide
+/* Слайд активный (показывается) */
+.slick-slide.slick-active
+/* Слайд основной */
+.slick-slide.slick-current
+/* Слайд по центру */
+.slick-slide.slick-center
+/* Клонированный слайд */
+.slick-slide.slick-cloned
+/* Стрелка */
+.slick-arrow
+/* Стрелка влево */
+.slick-arrow.slick-prev
+/* Стрелка вправо */
+.slick-arrow.slick-next
+/* Стрелка не активная */
+.slick-arrow.slick-disabled
+/* Точки (булиты) */
+.slick-dots
+.slick-dots li
+/* Активная точка */
+.slick-dots li.slick-active
+/* Элемент точки */
+.slick-dots li button
+
+.promo
+    position: relative
+    min-width: 0
+    display: flex
+    align-items: center
+    width: 100%
+    height: 440px
+    &__bg
+        position: absolute
+        z-index: -1
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        min-width: 0
+        width: 100%
+        height: 440px
+        img
+            /** width: 1920px!important **/
+    .row
+        justify-content: flex-end
+    .slick-arrow
+        height: 47px
+        width: 12px
+        padding: 0
+        border: none
+        background: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    .slick-arrow.slick-prev
+        font-size: 0
+        left: -40px
+        background-image: url('../images/dest/arrow-left.png')
+    .slick-arrow.slick-next
+        font-size: 0
+        right: -40px
+        background-image: url('../images/dest/arrow-right.png')
+    &__wrapper
+        position: relative
+        width: 427px
+        height: 180px
+        border: 2px solid #fff
+        padding: 8px 10px
+        margin-right: 55px
+    &__item
+        display: flex
+        align-items: center
+        height: 160px
+        background-color: rgba(255,255,255,0.8)
+        &-date
+            margin: 16px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            width: 105px
+            height: 128px
+            border: 1px solid #c99c47
+            color: #c99c47
+            font-weight: 900
+            text-transform: uppercase
+        &-day
+            font-size: 29px
+            line-height: 20px
+        &-month
+            margin: 8px 0
+            font-size: 18px
+            line-height: 14px
+        &-year
+            font-size: 34px
+            line-height: 26px
+        &-info
+            width: 240px
+        &-title
+            color: #c99c47
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+        &-descr
+            color: #323232
+            font-size: 13px
+            font-weight: 300
+            line-height: 18px
+        &-location
+            color: #757575
+            font-size: 14px
+            font-weight: 300
+.capabilities
+    padding: 66px 0 49px 0
+    .row
+        justify-content: center
+    &__item
+        margin: 50px 0 35px 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &-icon
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 170px
+            height: 170px
+            border-radius: 100%
+            border: 1px solid #c99c47
+        &-title
+            text-align: center
+            text-transform: uppercase
+            margin-top: 15px
+            font-size: 17px
+            font-weight: 500
+            color: #323232
+        &-descr
+            text-align: center
+            margin-top: 14px
+            font-size: 15px
+            font-weight: 300
+            color: #323232
+            line-height: 24px
+        &-btn
+            margin-top: 16px
+            background-color: #d4c198
+            padding: 15px 26px
+            border: none
+            text-align: center
+            a
+                font-size: 13px
+                font-weight: 400
+                color: #fff
+                text-decoration: none
+        &-subtitle
+            margin-top: 16px
+            font-size: 11px
+            font-weight: 400
+            color: #919191
+    &__btns
+        display: flex
+        justify-content: center
+.title
+    font-size: 24px
+    line-height: 24px
+    text-transform: uppercase
+    font-weight: 500
+    color: #323232
+    text-align: center
+.descr
+    font-size: 17px
+    line-height: 30px
+    font-weight: 300
+    color: #323232
+    text-align: center
+.reviews
+    padding: 52px 0 61px 0
+    background-color: #f8f3e9
+    .slick-arrow
+        position: absolute
+        padding: 0
+        border: none
+        background: none
+        height: 47px
+        width: 12px
+    .slick-arrow.slick-prev
+        font-size: 0
+        top: 50%
+        transform: translateY(-50%)
+        left: -30px
+        background-image: url('../images/dest/arrow-left-color.png')
+    .slick-arrow.slick-next
+        font-size: 0
+        top: 50%
+        transform: translateY(-50%)
+        right: -30px
+        background-image: url('../images/dest/arrow-right-color.png')
+    &__slider
+        position: relative
+        display: flex
+        justify-content: center
+        margin-top: 36px
+    &__slide
+        position: relative
+        display: flex
+        justify-content: center
+        min-width: 0
+        margin-right: 50px
+        &-img
+            width: 121px
+            height: 121px
+            img
+                object-fit: cover
+                width: 121px
+                height: 121px
+                display: block
+                border: 5px solid #fff
+                border-radius: 100%
+        &-info
+            position: relative
+            margin-left: 35px
+            padding: 24px 30px
+            width: 375px
+            min-height: 245px
+            background-color: #fff
+            border-radius: 2px
+            &:before
+                position: absolute
+                top: 40px
+                left: -44px
+                content: ''
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 22px
+                border-color: transparent #fff transparent transparent
+        &-title
+            font-size: 17px
+            line-height: 15px
+            font-weight: 500
+            color: #323232
+        &-date
+            margin-top: 11px
+            width: 119px
+            height: 29px
+            font-size: 9px
+            line-height: 9px
+            font-weight: 300
+            border-radius: 2px
+            text-transform: uppercase
+            color: #fff
+            background-color: rgba(120,120,123,0.5)
+            padding: 11px 16px
+            text-align: center
+        &-descr
+            margin-top: 11px
+            font-size: 14px
+            line-height: 22px
+            font-weight: 300
+            color: #323232
+.promovideo
+    padding: 58px 0
+    img
+        display: block
+        margin: 25px auto 0 auto
+.clients
+    padding: 42px 0 71px 0
+    background-color: #f8f3e9
+    .slick-arrow
+        position: absolute
+        padding: 0
+        border: none
+        background: none
+        height: 47px
+        width: 12px
+    .slick-arrow.slick-prev
+        font-size: 0
+        top: 50%
+        transform: translateY(-50%)
+        left: -30px
+        background-image: url('../images/dest/arrow-left-color.png')
+    .slick-arrow.slick-next
+        font-size: 0
+        top: 50%
+        transform: translateY(-50%)
+        right: -30px
+        background-image: url('../images/dest/arrow-right-color.png')
+    &__slider
+        position: relative
+        min-width: 0
+        display: flex
+        margin-top: 35px
+    &__slide
+        margin: 0 7px
+        padding: 10px
+        display: flex
+        align-items: center
+        width: 178px
+        height: 120px
+        background-color: #fff
+        img
+            display: block
+            width: 100%
+            margin: 0 auto
+footer
+    padding: 47px 0 38px 0
+    background-color: #323232
+    .footer-title
+        color: #c99c47
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+    .menu
+        list-style-type: none
+        padding: 0
+        margin: 0
+        &__item
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+            color: #fff
+            text-decoration: none
+        &__link
+            color: #fff
+            text-decoration: none    
+            &:hover
+                color: $accent
+            &-active
+                color: $accent
+                font-weight: 500
+    address, .phone, .email
+        margin: 0
+        display: block
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
+        color: #fff
+    .phone
+        text-decoration: none
+    .copyright
+        margin-top: 37px
+        font-size: 14px
+        font-weight: 300
+        color: #fff
+    .webdev
+        display: flex
+        justify-content: flex-end
+        margin-top: 37px
+        font-size: 13px
+        font-weight: 300
+        opacity: 0.5
+        color: #fff
+        line-height: 30px
+        img
+            display: block
+            margin-left: 15px
+    .divider
+        margin-top: 44px
+        width: 100%
+        height: 1px
+        background-color: rgba(255,255,255,0.1)
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba($color: #000000, $alpha: .40)
+    top: 0
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-height: 373px
+    width: 421px
+    border: 2px solid #c99c47
+    background-color: #fff
+    &__close
+        position: absolute
+        top: -25px
+        right: -25px
+        font-size: 40px
+        line-height: 20px
+        color: #fff
+        cursor: pointer
+    &__title
+        margin: 35px auto 0 auto
+        font-size: 17px
+        text-align: center
+        line-height: 12px
+        font-weight: 500
+        color: #323232
+        text-transform: uppercase
+    &__descr
+        margin: 14px auto 23px auto
+        width: 360px
+        text-align: center
+        line-height: 20px
+        font-size: 15px
+        font-weight: 300
+        color: #323232
+    .subscribe-form
+        display: flex
+        flex-direction: column
+        input
+            margin: 0 auto 6px auto
+            width: 364px
+            height: 50px
+            line-height: 50px
+            text-align: center
+            font-size: 14px
+            font-weight: 300
+            color: #606060
+            text-transform: uppercase
+            border: 1px solid #e8d8b6
+    .button_submit
+        margin: 6px auto 0 auto
+        padding: 0
+        border: none
+        width: 129px
+        height: 42px
+        background-color: #c99c47
+        color: #fff
+        font-size: 13px
+        line-height: 42px
+        font-weight: 400
+        text-transform: uppercase
+#subscribe
+    display: none
+
+.sponsors
+    padding-top: 46px
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .descr
+        margin-top: 15px
+    &__selectlabel
+        margin-top: 35px
+        font-size: 17px
+        font-weight: 500
+        color: #323232
+        text-transform: uppercase
+        text-align: center
+    &__select
+        display: block
+        margin: 14px auto 0 auto
+        width: 450px
+        height: 50px
+        border: 1px solid #e8d8b6
+        border-radius: 0
+        padding: 15px 0 15px 18px
+        font-size: 14px
+        font-weight: 300
+        appearance: none
+        background: url('../images/dest/arrow-select.png') 97% 50% no-repeat !important
+        &:focus-visible
+            outline: 1px solid #c99c47
+        option
+            padding: 0
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 47px
+    &__item
+        margin: 0 15px 65px 15px
+        width: 263px
+        &-title
+            font-size: 19px
+            line-height: 14px
+            font-weight: 500
+            text-transform: uppercase
+            text-align: center
+            color: #c99c47
+        &-img
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 21px
+            width: 263px
+            height: 160px
+            border: 1px solid #f3ebda
+        &-subtitle
+            margin-top: 20px
+            font-size: 17px
+            line-height: 12px
+            font-weight: 500
+            color: #323232
+            text-align: center
+            text-transform: uppercase
+        &-descr
+            margin-top: 14px
+            font-size: 15px
+            font-weight: 300
+            line-height: 20px
+            color: #323232
+            text-align: center
+        &-btn
+            display: block
+            margin: 0 auto
+            margin-top: 13px
+            background-color: #d4c198
+            padding: 15px 26px
+            border: none
+            text-align: center
+            a
+                font-size: 13px
+                font-weight: 400
+                color: #fff
+                text-decoration: none
+.exhibitors
+    padding: 48px 0 45px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .descr
+        margin-top: 15px
+    &__selectlabel
+        margin-top: 35px
+        font-size: 17px
+        font-weight: 500
+        color: #323232
+        text-transform: uppercase
+        text-align: center
+    &__select
+        display: block
+        margin: 14px auto 0 auto
+        width: 450px
+        height: 50px
+        border: 1px solid #e8d8b6
+        border-radius: 0
+        padding: 15px 0 15px 18px
+        font-size: 14px
+        font-weight: 300
+        appearance: none
+        background: url('../images/dest/arrow-select.png') 97% 50% no-repeat !important
+        &:focus-visible
+            outline: 1px solid #c99c47
+        option
+            padding: 0
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin-top: 47px
+    &__item
+        margin: 39px 0 33px 0
+        &-img
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 160px
+            border: 1px solid #f3ebda
+        &-title
+            margin-top: 20px
+            font-size: 17px
+            line-height: 12px
+            font-weight: 500
+            color: #323232
+            text-align: center
+            text-transform: uppercase
+        &-descr
+            margin-top: 14px
+            font-size: 15px
+            font-weight: 300
+            line-height: 20px
+            color: #323232
+            text-align: center
+        &-btn
+            display: block
+            margin: 0 auto
+            margin-top: 13px
+            background-color: #d4c198
+            padding: 15px 26px
+            border: none
+            text-align: center
+            a
+                font-size: 13px
+                font-weight: 400
+                color: #fff
+                text-decoration: none
+.speakers
+    padding: 48px 0 60px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .descr
+        margin-top: 15px
+    &__selectlabel
+        margin-top: 35px
+        font-size: 17px
+        font-weight: 500
+        color: #323232
+        text-transform: uppercase
+        text-align: center
+    &__select
+        display: block
+        margin: 14px auto 0 auto
+        width: 450px
+        height: 50px
+        border: 1px solid #e8d8b6
+        border-radius: 0
+        padding: 15px 0 15px 18px
+        font-size: 14px
+        font-weight: 300
+        appearance: none
+        background: url('../images/dest/arrow-select.png') 97% 50% no-repeat !important
+        &:focus-visible
+            outline: 1px solid #c99c47
+        option
+            padding: 0
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin-top: 40px
+    &__item
+        margin: 40px 0 10px 0
+        width: 100%
+        min-width: 260px
+        &-img
+            margin: 0 auto
+            width: 151px
+            height: 151px
+            img
+                object-fit: cover
+                padding: 8px
+                width: 151px
+                height: 151px
+                display: block
+                border: 1px solid #f4ecdc
+                border-radius: 100%
+        &-title
+            margin-top: 17px
+            font-size: 17px
+            line-height: 12px
+            font-weight: 500
+            color: #323232
+            text-align: center
+            text-transform: uppercase
+        &-descr
+            margin-top: 14px
+            font-size: 15px
+            font-weight: 300
+            line-height: 20px
+            color: #323232
+            text-align: center
+        &-btn
+            display: block
+            margin: 0 auto
+            margin-top: 15px
+            background-color: #d4c198
+            padding: 15px 26px
+            border: none
+            text-align: center
+            a
+                font-size: 13px
+                font-weight: 400
+                color: #fff
+                text-decoration: none
+.media
+    padding: 48px 0 60px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .descr
+        margin-top: 15px
+    &__items
+        margin-top: 40px
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+    &__item
+        margin-bottom: 45px
+        &-img
+            border: 1px solid #f3ebda
+            img
+                width: 100%
+        &-link
+            display: block
+            margin-top: 20px
+            font-size: 17px
+            line-height: 20px
+            font-weight: 500
+            color: #323232
+            text-align: center
+            text-transform: uppercase
+            &:hover
+                color: #c99c47
+        &-descr
+            margin-top: 14px
+            font-size: 15px
+            font-weight: 30
+            line-height: 20px
+            color: #323232
+            text-align: center
+    &-btn
+        display: block
+        margin: 0 auto
+        padding: 0
+        width: 120px
+        height: 38px
+        background-color: #d4c198
+        border: none
+        a
+            display: block
+            margin: 0 auto
+            line-height: 38px
+            font-size: 13px
+            font-weight: 400
+            color: #fff
+            text-decoration: none
+.contacts
+    padding: 34px 0 71px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    img
+        width: 100%
+    &__item
+        margin-bottom: 15px
+        font-size: 15px
+        line-height: 24px
+        color: #323232
+        &-title
+            font-weight: 500
+            text-transform: uppercase
+        &-subtitle
+            font-weight: 400
+        &-email
+            font-weight: 300
+            a
+                color: #c99c47
+        &-phone
+            font-weight: 300
+            a
+                color: #323232
+                text-decoration: none
+.feedback
+    padding: 46px 0 44px 0
+    background-color: #f8f3e9
+    .title
+        margin-bottom: 10px
+    &__title
+        margin-top: 31px
+        font-size: 15px
+        font-weight: 500
+        color: #323232
+        line-height: 15px
+    &__phone
+        font-size: 23px
+        font-weight: 700
+        a
+            color: #323232
+            text-decoration: none
+    &__descr
+        font-size: 15px
+        font-weight: 400
+        color: #323232
+        line-height: 27px
+        a
+            color: #c99c47
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-end
+        label
+            display: block
+            width: 100%
+            font-size: 14px
+            font-weight: 500
+            line-height: 24px
+            margin-bottom: 7px
+            color: #606060
+        textarea
+            width: 100%
+            height: 115px
+            padding: 14px
+            font-size: 12px
+            font-weight: 300
+            color: #606060
+            resize: none
+            border: 1px solid #e8d8b6
+            margin-bottom: 15px
+        input
+            margin-bottom: 16px
+            width: 270px
+            height: 50px
+            font-size: 12px
+            font-weight: 300
+            color: #606060
+            line-height: 50px
+            padding: 0 14px
+            border: 1px solid #e8d8b6
+            &[name="name"]
+                margin-left: 15px
+        button
+            display: block
+            width: 110px
+            height: 42px
+            background-color: #c99c47
+            line-height: 42px
+            font-size: 13px
+            text-align: center
+            text-transform: uppercase
+            font-weight: 400
+            color: #fff
+            border: none
+            padding: 0
+.registration
+    padding: 48px 0 43px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    &__steps
+        padding: 40px 0 45px 0
+        img
+            display: block
+            margin: 8px auto
+    &__step
+        margin: 0 auto
+        width: 414px
+        height: 58px
+        border: 2px solid #c99c47
+        line-height: 58px
+        text-align: center
+        color: #c99c47
+    &__form
+        display: flex
+        margin: 0 auto
+        width: 660px
+        flex-wrap: wrap
+        label
+            margin-bottom: 11px
+            font-size: 14px
+            font-weight: 500
+            color: #606060
+            width: 230px
+            height: 50px
+            line-height: 50px
+            span
+                text-decoration: underline
+            a
+                color: #606060
+                text-decoration: underline
+        input, select
+            margin-bottom: 11px
+            padding: 0 17px
+            border: 1px solid #e8d8b6
+            font-size: 14px
+            font-weight: 300
+            color: #323232
+            line-height: 50px
+            width: 425px
+            height: 50px
+            &:focus-visible
+                outline: 1px solid #c99c47
+        input[name="package"]
+            padding: 0
+            width: 120px
+            height: 50px
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+            color: #323232
+            border: none
+            background-color: #f2ead8
+            margin-right: 3px
+        input[name="payment"]
+            padding: 0
+            width: 105px
+            height: 50px
+            font-size: 14px
+            font-weight: 900
+            text-transform: uppercase
+            color: #323232
+            border: none
+            background-color: #f2ead8
+            margin-right: 2px
+        input[name="submit"]
+            padding: 0
+            margin: 0
+            width: 111px
+            height: 42px
+            line-height: 42px
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase
+            color: #fff
+            background-color: #c99c47
+        .submit
+            margin-top: 22px
+            height: 42px
+        input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked)
+            position: absolute
+            left: -9999px
+        input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label
+            display: inline-block
+            position: relative
+            margin-left: 230px
+            margin-bottom: 0
+            line-height: 42px
+            height: 42px
+            width: 312px
+            padding-left: 30px
+            cursor: pointer
+        input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            width: 19px
+            height: 19px
+            background-color: #fff
+            border: 1px solid #e8d8b6
+        input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after
+            content: ''
+            position: absolute
+            transition: all 0.2s ease
+            top: 40%
+            left: 3px
+            width: 14px
+            height: 7px
+            border-radius: 1px
+            border-left: 2px solid #000
+            border-bottom: 2px solid #000
+            transform: rotate(-45deg)
+        input[type="checkbox"]:not(:checked) + label:after
+            opacity: 0
+        input[type="checkbox"]:checked + label:after
+            opacity: 1
+        select
+            appearance: none
+            background: url('../images/dest/arrow-select.png') 97% 50% no-repeat !important
+
+.detail
+    padding: 48px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .title
+        margin-bottom: 10px
+    &__logo
+        margin: 40px auto
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 320px
+        width: 520px
+        border: 1px solid #f3ebda
+        &-circle
+            border-radius: 50%
+            width: 325px
+            height: 325px
+            img
+                border-radius: 50%
+                object-fit: cover
+                padding: 18px
+                width: 325px
+                height: 325px
+    &__media
+        margin: 50px auto
+        width: 750px
+        height: auto
+    p
+        font-size: 17px
+        font-weight: 300
+        color: #323232
+        line-height: 30px
+        text-align: center
+.events
+    padding: 48px 0 60px 0
+    border-top: 1px solid rgba(50,50,50,0.2)
+    .descr
+        margin-top: 15px
+    &__items
+        margin-top: 20px
+    &__item
+        display: flex
+        align-items: center
+        padding: 23px 0 21px 0
+        border-bottom: 1px solid #d6d6d6
+        width: 100%
+        &-img
+            margin-right: 30px
+            width: 360px
+            height: 220px
+            border: 1px solid #f3ebda
+        &-title
+            font-size: 16px
+            font-weight: 500
+            color: #323232
+            line-height: 16px
+            text-transform: uppercase
+        &-date
+            margin-top: 12px
+            font-size: 16px
+            line-height: 16px
+            font-weight: 500
+            color: #c99c47
+        &-descr
+            margin-top: 12px
+            font-size: 15px
+            font-weight: 300
+            line-height: 20px
+            color: #323232
+    &__item:last-child
+        border: none
+    &-btn
+        margin-top: 20px
+        display: block
+        padding: 0
+        width: 120px
+        height: 38px
+        background-color: #d4c198
+        border: none
+        a
+            display: block
+            margin: 0 auto
+            line-height: 38px
+            font-size: 13px
+            font-weight: 400
+            color: #fff
+            text-decoration: none
+
+@import media
