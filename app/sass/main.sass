@@ -1,42 +1,50 @@
 @import config
 *
     font-family: Roboto, sans-serif
-.container
-    padding: 0
+
 .btn
     &-register
         background-color: #c99c47
-        border: none
         width: 153px
         height: 42px
         line-height: 42px
         text-align: center
         font-size: 13px
         font-weight: 400
-        a
-            text-transform: uppercase
-            text-decoration: none
+        text-transform: uppercase
+        color: #fff
+        &:hover
             color: #fff
+            text-decoration: none
+            background-color: #9c701d
     &-nav
         background-color: #e8d8b6
-        border: none
-        padding: 14px 27px
+        height: 38px
+        width: 153px
         font-size: 12px
-        line-height: 10px
-        a
-            text-transform: uppercase
+        line-height: 38px
+        text-align: center
+        color: #323232
+        text-transform: uppercase
+        &:hover
             color: #323232
             text-decoration: none
+            background-color: #aa8e52
     &-subscribe
-        padding: 17px 41px
+        height: 42px
+        width: 153px
         font-size: 13px
-        line-height: 10px
+        line-height: 42px
         font-weight: 400
         margin-left: 15px
-        border: none
+        text-align: center
         background-color: #323232
         color: #fff
         text-transform: uppercase
+        &:hover
+            text-decoration: none
+            color: #fff
+            background-color: #5e5e5e
 header
     background-color: #323232
     nav
@@ -45,56 +53,64 @@ header
         justify-content: space-between
         width: 100%
         height: 56px
-        .menu > li:hover .sub-menu
-            opacity: 1
-            z-index: 5
-            margin-top: 10px
+        position: relative
+
         .menu
+            flex: 1 0
+            z-index: 6
             list-style-type: none
             display: flex
-            position: relative
             justify-content: start
             align-items: center
             margin: 0
             padding: 0
-            .sub-menu
-                z-index: -1
-                opacity: 0
-                list-style-type: none
-                position: absolute
-                width: 295px
-                border: 1px solid #d6d6d6
-                top: 56px
-                margin-left: -20px
-                padding: 0
-                background-color: #fff
-                &__item
-                    padding-left: 10px!important
-                    display: block
-                    font-size: 15px
-                    font-weight: 300
-                    height: 48px
-                    margin: 0 10px
-                    line-height: 48px
-                    border-bottom: 1px solid #d6d6d6
-                    a
-                        text-decoration: none
-                        color: #323232
-                    &:hover
-                        padding-left: 20px!important
-                        margin: 0
-                        background-color: #d6d6d6
             &__item
                 display: block
+                position: relative
                 font-size: 15px
-                line-height: 16px
+                line-height: 56px
+                padding: 0 20px
                 font-weight: 300
-                margin: 10px 0
-                padding: 10px 20px
-                border-right: 1px solid #474747
+                height: 56px
+                &:after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    right: 0
+                    display: block
+                    height: 35px
+                    width: 1px
+                    background-color: #474747
                 &:hover
                     background-color: #212121
-                    padding: 20px
+                .sub-menu
+                    z-index: 7
+                    list-style-type: none
+                    position: absolute
+                    display: none
+                    width: 295px
+                    border: 1px solid #d6d6d6
+                    top: 56px
+                    margin-left: -20px
+                    padding: 0
+                    background-color: #fff
+                    &__item
+                        padding-left: 10px!important
+                        display: block
+                        font-size: 15px
+                        font-weight: 300
+                        height: 48px
+                        margin: 0 10px
+                        line-height: 48px
+                        border-bottom: 1px solid #d6d6d6
+                        a
+                            text-decoration: none
+                            color: #323232
+                        &:hover
+                            padding-left: 20px!important
+                            margin: 0
+                            background-color: #d6d6d6
             &__link
                 text-decoration: none
                 color: #fff
@@ -103,7 +119,6 @@ header
                     font-weight: 500
             li:last-child
                 border: none
-
 
 .register
     padding: 15px 0
@@ -116,9 +131,9 @@ header
             padding: 0 30px 0 15px
     &__items
         display: flex
-        min-width: 780px
-        height: 63px
+        flex: 1 1 220px
     &__item
+        flex: 0 1 220px
         padding: 0 15px
         display: flex
         align-items: center
@@ -139,43 +154,12 @@ header
             &:hover
                 color: #323232
 
-/* Слайдер */
-.slick-slider
-/* Слайдер запущен */
-.slick-slider.slick-initialized
-/* Слайдер с точками */
-.slick-slider.slick-dotted
 /* Ограничивающая оболочка */
 .slick-list
     overflow: hidden
 /* Лента слайдов */
 .slick-track
     display: flex
-/* Слайд */
-.slick-slide
-/* Слайд активный (показывается) */
-.slick-slide.slick-active
-/* Слайд основной */
-.slick-slide.slick-current
-/* Слайд по центру */
-.slick-slide.slick-center
-/* Клонированный слайд */
-.slick-slide.slick-cloned
-/* Стрелка */
-.slick-arrow
-/* Стрелка влево */
-.slick-arrow.slick-prev
-/* Стрелка вправо */
-.slick-arrow.slick-next
-/* Стрелка не активная */
-.slick-arrow.slick-disabled
-/* Точки (булиты) */
-.slick-dots
-.slick-dots li
-/* Активная точка */
-.slick-dots li.slick-active
-/* Элемент точки */
-.slick-dots li button
 
 .promo
     position: relative
@@ -201,21 +185,21 @@ header
         height: 47px
         width: 12px
         padding: 0
+        font-size: 0
         border: none
         background: none
         position: absolute
         top: 50%
         transform: translateY(-50%)
     .slick-arrow.slick-prev
-        font-size: 0
         left: -40px
         background-image: url('../images/dest/arrow-left.png')
     .slick-arrow.slick-next
-        font-size: 0
         right: -40px
         background-image: url('../images/dest/arrow-right.png')
     &__wrapper
         position: relative
+        z-index: 5
         width: 427px
         height: 180px
         border: 2px solid #fff
@@ -416,6 +400,7 @@ header
 .promovideo
     padding: 58px 0
     img
+        width: 100%
         display: block
         margin: 25px auto 0 auto
 .clients

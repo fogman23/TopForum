@@ -1,15 +1,76 @@
 @media ( max-width: 1200px )
-    .register
-        &__items
-            min-width: 600px
     .feedback
         &__form
             input
                 width: 100%
                 &[name="name"]
                     margin-left: 0
+
 @media ( max-width: 991px )
     .register
-        &__items
-            min-width: 400px
+        &__wrapper
+            .logo
+                padding: 0 15px
+        
+@media ( max-width: 767px )
+    header
+        nav
+            .menu
+                display: none
+                position: absolute
+                top: 56px
+                width: 100%
+                text-align: center
+                background-color: #323232
+                left: 0
+                &__item
+                    position: relative
+                    padding: 0
+                    border-bottom: 1px solid #474747
+                    &:after
+                        display: none
+                    .sub-menu
+                        position: relative
+                        margin: 0
+                        top: 0
+                        width: 100% 
+                        &__item
+                            margin: 0
+                            padding: 0!important
+                        
+    .hamburger
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: $accent
+        span
+            display: block
+            height: 2px
+            margin: 3px 0
+            width: 32px
+            background-color: #fff
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px 
+                &:nth-child(1)
+                    transform: translateY(0px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(-3px) rotate(45deg)
     
+    .register
+        &__items
+            flex-wrap: wrap
+        &__item:first-child
+            margin-bottom: 10px
+        &__wrapper
+            .logo
+                img
+                    width: 90%
+            

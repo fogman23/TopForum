@@ -1,5 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+	$('.hamburger').click(function () {
+		$(this).toggleClass('hamburger_active');
+		$('.menu').slideToggle(400);
+	});
+
+	if ($(window).width() < 768) {
+		$('.menu').find('> li').click(function () {
+			$('.menu > li').not(this).find('ul').slideUp;
+			$(this).find('ul').stop(true, true).slideToggle(400);
+		});
+	} else {
+		$('.menu').find('> li').hover(function () {
+			$('.menu > li').not(this).find('ul').slideUp;
+			$(this).find('ul').stop(true, true).slideToggle(400);
+		});
+	}
+
 	$('.promo__wrapper').slick({
 		speed: 500,
 		fade: true,
@@ -51,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			{
 				breakpoint: 768,
 				settings: {
+					arrows: false,
 					slidesToShow: 3,
 					slidesToScroll: 1,
 				}
@@ -58,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		]
 	});
 
-	$('[data-modal=subscribe]').on('click', function () {
+	$('[data-modal=subscribe]').on('click', function (e) {
+		e.preventDefault();
 		$('.overlay, #subscribe').fadeIn('slow');
 	});
 	$('.modal__close').on('click', function () {
