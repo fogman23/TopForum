@@ -1,6 +1,24 @@
 @import config
 *
     font-family: Roboto, sans-serif
+.new
+    &__wrapper
+        display: flex
+    &__item
+        overflow: hidden
+        margin: 0 auto
+        img
+            object-fit: cover
+            
+
+
+
+
+    .slick-list
+        overflow: hidden
+    /* Лента слайдов */
+    .slick-track
+        display: flex
 
 .btn
     &-register
@@ -82,6 +100,8 @@ header
                     height: 35px
                     width: 1px
                     background-color: #474747
+                &:last-child:after
+                    display: none
                 &:hover
                     background-color: #212121
                 .sub-menu
@@ -138,6 +158,7 @@ header
         display: flex
         align-items: center
         &-icon
+            flex: 0 0 37px
             display: flex
             justify-content: center
             align-items: center
@@ -154,33 +175,24 @@ header
             &:hover
                 color: #323232
 
-/* Ограничивающая оболочка */
-.slick-list
-    overflow: hidden
-/* Лента слайдов */
-.slick-track
-    display: flex
 
 .promo
     position: relative
-    min-width: 0
-    display: flex
-    align-items: center
     width: 100%
     height: 440px
-    &__bg
-        position: absolute
+    &__slider
+        position: relative
         z-index: -1
-        left: 50%
-        transform: translateX(-50%)
         display: flex
         min-width: 0
-        width: 100%
-        height: 440px
-        img
-            /** width: 1920px!important **/
-    .row
-        justify-content: flex-end
+    &__slide
+        margin: 0 auto
+    /* Ограничивающая оболочка */
+    .slick-list
+        overflow: hidden
+    /* Лента слайдов */
+    .slick-track
+        display: flex
     .slick-arrow
         height: 47px
         width: 12px
@@ -198,13 +210,15 @@ header
         right: -40px
         background-image: url('../images/dest/arrow-right.png')
     &__wrapper
-        position: relative
-        z-index: 5
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 40px
+        z-index: 2
         width: 427px
         height: 180px
         border: 2px solid #fff
         padding: 8px 10px
-        margin-right: 55px
     &__item
         display: flex
         align-items: center
@@ -315,6 +329,11 @@ header
 .reviews
     padding: 52px 0 61px 0
     background-color: #f8f3e9
+    .slick-list
+        overflow: hidden
+    /* Лента слайдов */
+    .slick-track
+        display: flex
     .slick-arrow
         position: absolute
         padding: 0
@@ -406,6 +425,11 @@ header
 .clients
     padding: 42px 0 71px 0
     background-color: #f8f3e9
+    .slick-list
+        overflow: hidden
+    /* Лента слайдов */
+    .slick-track
+        display: flex
     .slick-arrow
         position: absolute
         padding: 0
@@ -847,6 +871,8 @@ footer
 .contacts
     padding: 34px 0 71px 0
     border-top: 1px solid rgba(50,50,50,0.2)
+    &__map
+        margin-bottom: 20px
     img
         width: 100%
     &__item
@@ -895,7 +921,7 @@ footer
     &__form
         display: flex
         flex-wrap: wrap
-        justify-content: flex-end
+        justify-content: flex-start
         label
             display: block
             width: 100%
@@ -916,7 +942,7 @@ footer
             margin-bottom: 15px
         input
             margin-bottom: 16px
-            width: 270px
+            width: 48.5%
             height: 50px
             font-size: 12px
             font-weight: 300
@@ -925,8 +951,9 @@ footer
             padding: 0 14px
             border: 1px solid #e8d8b6
             &[name="name"]
-                margin-left: 15px
+                margin-left: 3%
         button
+            margin-left: auto
             display: block
             width: 110px
             height: 42px
@@ -1075,22 +1102,25 @@ footer
         justify-content: center
         align-items: center
         height: 320px
-        width: 520px
+        max-width: 520px
         border: 1px solid #f3ebda
         &-circle
             border-radius: 50%
+            padding: 18px
+            background-color: #fff
             width: 325px
             height: 325px
             img
                 border-radius: 50%
                 object-fit: cover
-                padding: 18px
-                width: 325px
-                height: 325px
+                width: 100%
+                height: 100%
     &__media
         margin: 50px auto
-        width: 750px
+        width: 100%
         height: auto
+        img
+            width: 100%
     p
         font-size: 17px
         font-weight: 300
@@ -1112,9 +1142,11 @@ footer
         width: 100%
         &-img
             margin-right: 30px
-            width: 360px
-            height: 220px
+            flex: 1 0 360px
+            height: auto
             border: 1px solid #f3ebda
+            img
+                width: 100%
         &-title
             font-size: 16px
             font-weight: 500

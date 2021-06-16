@@ -73,4 +73,98 @@
             .logo
                 img
                     width: 90%
-            
+    .events
+        &__item
+            flex-wrap: wrap
+            justify-content: center
+            &-img
+                margin: 0
+            &-info
+                margin-top: 20px
+    .registration
+        &__step
+            width: 100%
+            height: auto
+        &__form
+            width: 100%
+            select
+                width: 100%
+            label
+                width: 100%
+            input
+                width: 100%
+            .submit
+                height: auto
+                input[type="checkbox"]:checked + label,
+                input[type="checkbox"]:not(:checked) + label
+                    margin-left: 0
+                input[name="submit"]
+                    margin-top: 15px
+
+@media ( max-width: 575px )
+    .register
+        height: auto
+        &__wrapper
+            flex-direction: column
+        &__items
+            justify-content: center
+            align-items: center
+            flex: 1 1
+            flex-wrap: nowrap
+            margin: 15px 0
+        &__item:first-child
+            margin-bottom: 0
+    .promo
+        &__wrapper
+            right: 0
+        &__item
+            width: 100%
+            &-info
+               
+    .reviews
+        &__slide
+            display: block
+            margin-right: 0
+            &-info
+                margin-left: 0
+                margin-top: 30px
+                width: 100%x
+                &:before
+                    top: -44px
+                    left: 38px
+                    border-color: transparent transparent #fff transparent
+    footer
+        .row
+            flex-direction: column
+        .col
+            margin-top: 20px
+        .copyright, .webdev
+            margin-top: 0
+        .webdev
+            justify-content: flex-start
+
+    .sponsors, .exhibitors, .speakers
+        &__select
+            width: 100%
+    .detail
+        &__logo-circle
+            width: 290px
+            height: 290px
+
+
+@media ( max-width: 376px )
+    .promo
+        &__wrapper
+            width: 320px
+        &__item
+            width: 320px
+            &-info
+                width: 160px
+    .reviews
+        &__slide
+            &-info
+                width: 290px
+    .events
+        &__item
+            &-img
+                flex: 1 0 290px
