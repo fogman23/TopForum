@@ -1,15 +1,181 @@
 @media ( max-width: 1200px )
-    .register
-        &__items
-            min-width: 600px
     .feedback
         &__form
             input
                 width: 100%
                 &[name="name"]
                     margin-left: 0
+
 @media ( max-width: 991px )
     .register
-        &__items
-            min-width: 400px
+        &__wrapper
+            .logo
+                padding: 0 15px
+        
+@media ( max-width: 767px )
+    header
+        nav
+            .menu
+                display: none
+                position: absolute
+                top: 56px
+                width: 100%
+                text-align: center
+                background-color: #323232
+                left: 0
+                &__item
+                    position: relative
+                    padding: 0
+                    border-bottom: 1px solid #474747
+                    &:after
+                        display: none
+                    .sub-menu
+                        position: relative
+                        margin: 0
+                        top: 0
+                        width: 100% 
+                        &__item
+                            margin: 0
+                            padding: 0!important
+                        
+    .hamburger
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: $accent
+        span
+            display: block
+            height: 2px
+            margin: 3px 0
+            width: 32px
+            background-color: #fff
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px 
+                &:nth-child(1)
+                    transform: translateY(0px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(-3px) rotate(45deg)
     
+    .register
+        &__items
+            flex-wrap: wrap
+        &__item:first-child
+            margin-bottom: 10px
+        &__wrapper
+            .logo
+                img
+                    width: 90%
+    .events
+        &__item
+            flex-wrap: wrap
+            justify-content: center
+            &-img
+                margin: 0
+            &-info
+                margin-top: 20px
+    .registration
+        &__step
+            width: 100%
+            height: auto
+        &__form
+            width: 100%
+            select
+                width: 100%
+            label
+                width: 100%
+            input
+                width: 100%
+            .submit
+                height: auto
+                input[type="checkbox"]:checked + label,
+                input[type="checkbox"]:not(:checked) + label
+                    margin-left: 0
+                input[name="submit"]
+                    margin-top: 15px
+
+@media ( max-width: 575px )
+    .register
+        height: auto
+        &__wrapper
+            flex-direction: column
+        &__items
+            justify-content: center
+            align-items: center
+            flex: 1 1
+            flex-wrap: nowrap
+            margin: 15px 0
+        &__item:first-child
+            margin-bottom: 0
+    .promo
+        &__wrapper
+<<<<<<< HEAD
+            width: 100%
+            margin-right: 0
+=======
+            right: 0
+>>>>>>> 4726b59fc16948a33d82636ecc7a998d9beb45d4
+        &__item
+            width: 100%
+            &-info
+               
+    .reviews
+        &__slide
+            display: block
+            margin-right: 0
+            &-info
+                margin-left: 0
+                margin-top: 30px
+                width: 100%x
+                &:before
+                    top: -44px
+                    left: 38px
+                    border-color: transparent transparent #fff transparent
+    footer
+        .row
+            flex-direction: column
+        .col
+            margin-top: 20px
+        .copyright, .webdev
+            margin-top: 0
+        .webdev
+            justify-content: flex-start
+
+    .sponsors, .exhibitors, .speakers
+        &__select
+            width: 100%
+    .detail
+        &__logo-circle
+            width: 290px
+            height: 290px
+
+
+@media ( max-width: 376px )
+    .promo
+        &__wrapper
+            width: 290px
+        &__item
+            width: 290px
+            &-info
+                width: 160px
+            &-title
+                font-size: 12px
+            &-descr
+                font-size: 11px
+            &-location
+                font-size: 12px
+    .reviews
+        &__slide
+            &-info
+                width: 290px
+    .events
+        &__item
+            &-img
+                flex: 1 0 290px

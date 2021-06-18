@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Top Forum | Media</title>
+	<title>Top Forum | Contacts</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
@@ -18,13 +18,38 @@
 	<header>
 		<div class="container">
 			<nav>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul class="menu">
-					<li class="menu__item"><a href="sponsors.html" class="menu__link">Sponsors</a></li>
-					<li class="menu__item"><a href="exhibitors.html" class="menu__link">Exhibitors</a></li>
-					<li class="menu__item"><a href="speakers.html" class="menu__link">Speakers</a></li>
-					<li class="menu__item"><a href="media.html" class="menu__link">Media</a></li>
+					<li class="menu__item"><a class="menu__link" href="sponsors.html">Sponsors</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a href="" class="menu__link">General Sponsor</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Platinum Sponsor</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Gold Sponsor</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">High-End Sponsor</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Silver Night Sponsor</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="exhibitors.html">Exhibitors</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="speakers.html">Speakers</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+							<li class="sub-menu__item"><a href="" class="menu__link">Wealth TOP FORUM Israel 2016</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="media.html">Media</a></li>
 				</ul>
-				<button class="btn-nav"><a href="#">Top Forum Club</a></button>
+				<a href="#" class="btn-nav">Top Forum Club</a>
 			</nav>
 		</div>
 	</header>
@@ -47,7 +72,7 @@
 						<a href="contacts.html" class="register__item-link">contacts</a>
 					</div>
 				</div>
-				<button class="btn-register"><a href="registration.html">register now</a></button>
+				<a href="registration.html" class="btn-register">register now</a>
 			</div>
 		</div>
 	</section>
@@ -55,10 +80,10 @@
 	<section class="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-8">
-					<img src="images/dest/map.jpg" alt="map">
+				<div class="col-lg-8 col-md-12">
+					<img class="contacts__map" src="images/dest/map.jpg" alt="map">
 				</div>
-				<div class="col-4">
+				<div class="col-lg-4 col-md-12">
 					<div class="contacts__item">
 						<div class="contacts__item-title">DELEGATE ENQUIRIES</div>
 						<div class="contacts__item-subtitle">Tony Bradley</div>
@@ -96,17 +121,17 @@
 		<div class="container">
 			<div class="title">feedback</div>
 			<div class="row">
-				<div class="col-6">
+				<div class="col-lg-6">
 					<form class="feedback__form">
 						<label for="appeal">Your appeal</label>
 						<textarea name="appeal" id="" cols="30" rows="10"></textarea>
-						<label for="email">How to contact you?</label>
+						<label>How to contact you?</label>
 						<input name="email" placeholder="E-mail" type="text">
 						<input name="name" placeholder="Your name" type="text">
 						<button>send</button>
 					</form>
 				</div>
-				<div class="col-6">
+				<div class="col-lg-6">
 					<div class="feedback__title">You can also ask questions by phone of a hot line:</div>
 					<div class="feedback__phone"><a href="tel:+421221025322">+421 221 025 322</a></div>
 					<div class="feedback__descr">The answers to many questions already in our <a href="#">FAQ</a><br>
@@ -119,7 +144,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-sm-3 col">
 					<div class="footer-title">Top Forum</div>
 					<ul class="menu">
 						<li class="menu__item"><a href="sponsors.html" class="menu__link">Sponsors</a></li>
@@ -128,13 +153,13 @@
 						<li class="menu__item"><a href="media.html" class="menu__link">Media</a></li>
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-9 col">
 					<div class="footer-title">Contact</div>
 					<address>Top Forum Group
 						Trnavska cesta 82, 821 02 Bratislava, Slovakia</address>
-					<br>
-					<a href="tel:+42121025322" class="phone">+421 221 025 322</a>
-					<a href="mailto:info@topforum.com" class='email'>info@topforum.com</a>
+						<br>
+						<a href="tel:+42121025322" class="phone">+421 221 025 322</a>
+						<a href="mailto:info@topforum.com" class='email'>info@topforum.com</a>
 				</div>
 			</div>
 			<div class="divider"></div>
